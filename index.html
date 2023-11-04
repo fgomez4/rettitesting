@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Get ready with Retti</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Get ready with Retti</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number">
+
+        <div class="sliders">
+            <label for="income">Income:</label>
+            <input type="range" id="income" min="0" max="800" value="400">
+            <span id="incomeValue">400</span>
+
+            <label for="creditScore">Credit Score:</label>
+            <input type="range" id="creditScore" min="0" max="800" value="400">
+            <span id="creditScoreValue">400</span>
+        </div>
+
+        <button onclick="openContactPage()">Contact Page</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

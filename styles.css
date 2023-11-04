@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, button {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+}
+
+button {
+    background-color: gold;
+    color: royalblue;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sliders {
+    margin-top: 20px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
