@@ -17,7 +17,7 @@ function openContactPage() {
 }
 document.addEventListener('DOMContentLoaded', function () {
     const body = document.body;
-    const toggleSwitch = document.getElementById('theme-switch');
+    const themeToggleBtn = document.getElementById('theme-toggle');
 
     // Check the user's preference from localStorage
     const currentTheme = localStorage.getItem('theme');
@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
         body.classList.add(prefersDarkMode ? 'dark-mode' : 'light-mode');
     }
 
-    // Toggle between light and dark modes
-    toggleSwitch.addEventListener('change', function () {
+    // Toggle between light and dark modes on button click
+    themeToggleBtn.addEventListener('click', function () {
         body.classList.toggle('dark-mode');
         body.classList.toggle('light-mode');
 
@@ -39,4 +39,5 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('theme', theme);
     });
 });
+
 
