@@ -15,6 +15,7 @@ function openContactPage() {
     // For now, let's simply alert the user with the information.
     alert(`Thank you, ${name}!\n\nContact Details:\nPhone: ${phone}\nIncome: ${income}\nCredit Score: ${creditScore}`);
 }
+
 document.addEventListener('DOMContentLoaded', function () {
     const body = document.body;
     const themeToggleBtn = document.getElementById('theme-toggle');
@@ -39,5 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('theme', theme);
     });
 });
+
+
 
 
