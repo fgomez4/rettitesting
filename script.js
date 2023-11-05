@@ -1,3 +1,10 @@
+function updateSliderValue(sliderId, displayId) {
+    var slider = document.getElementById(sliderId);
+    var display = document.getElementById(displayId);
+
+    display.textContent = slider.value;
+}
+
 function openContactPage() {
     var name = document.getElementById('name').value;
     var phone = document.getElementById('phone').value;

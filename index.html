@@ -17,12 +17,12 @@
 
         <div class="sliders">
             <label for="income">Income:</label>
-            <input type="range" id="income" min="0" max="800" value="400">
-            <span id="incomeValue">400</span>
+            <input type="range" id="income" min="0" max="800" value="400" oninput="updateSliderValue('income', 'incomeValue')">
+            <span id="incomeValue"></span>
 
             <label for="creditScore">Credit Score:</label>
-            <input type="range" id="creditScore" min="0" max="800" value="400">
-            <span id="creditScoreValue">400</span>
+            <input type="range" id="creditScore" min="0" max="800" value="400" oninput="updateSliderValue('creditScore', 'creditScoreValue')">
+            <span id="creditScoreValue"></span>
         </div>
 
         <button onclick="openContactPage()">Submit</button>
